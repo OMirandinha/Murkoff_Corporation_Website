@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murkoff Corporation - Leader in Neurotechnology</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imagens/logo.png">
+</head>
+<body>
+
+<!-- Sidebar Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse mc-sidebar" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-hide-large w3-large" onclick="w3_close()">Close &times;</button>
+    <div class="w3-container w3-padding-16 mc-logo-container">
+        <img src="imagens/logo.png" alt="Murkoff Corporation" class="mc-logo">
+    </div>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-16" onclick="w3_close()"><i class="fa fa-home"></i> HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-16" onclick="w3_close()"><i class="fa fa-info-circle"></i> ABOUT</a>
+    <a href="#technologies" class="w3-bar-item w3-button w3-padding-16" onclick="w3_close()"><i class="fa fa-flask"></i> TECHNOLOGIES</a>
+    <a href="#partners" class="w3-bar-item w3-button w3-padding-16" onclick="w3_close()"><i class="fa fa-handshake-o"></i> PARTNERS</a>
+    <a href="#faq" class="w3-bar-item w3-button w3-padding-16" onclick="w3_close()"><i class="fa fa-question-circle"></i> FAQ</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-16" onclick="w3_close()"><i class="fa fa-envelope"></i> CONTACT</a>
+</nav>
+
+<!-- Mobile menu button -->
+<div class="w3-top w3-hide-large w3-hide-medium">
+    <button class="w3-button w3-large mc-red w3-card mc-menu-btn" onclick="w3_open()">☰</button>
+</div>
+
+<!-- Main Content -->
+<main class="mc-main-content w3-container">
+
+    <!-- Hero Section -->
+    <section id="home" class="mc-hero w3-display-container">
+        <div class="w3-display-middle w3-text-white w3-center">
+            <h1 class="w3-jumbo mc-text-gold">MURKOFF CORPORATION</h1>
+            <h2 class="w3-xxlarge">Innovation in Neurotechnology and Biomedical Research</h2>
+            <p class="w3-large">Pushing the limits of science for human advancement</p>
+            <a href="#about" class="w3-button w3-xlarge w3-round-large mc-red w3-margin-top">Learn More</a>
+        </div>
+        <div class="w3-display-bottomleft w3-text-white w3-large w3-padding-large">
+            <i class="fa fa-arrow-down w3-animate-fading"></i>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mc-section">
+        <div class="w3-container w3-padding-64">
+            <h2 class="w3-center mc-text"><b>ABOUT MURKOFF</b></h2>
+            <div class="w3-row-padding w3-margin-top mc-equal-height">
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover mc-card-fixed">
+                        <div class="mc-card-content">
+                            <h3 class="mc-text">Our History</h3>
+                            <p>Founded in 1892 by John Wayne Murkoff, Murkoff Corporation quickly became a leader in neurotechnology research. Our journey began with the development of innovative therapies for neurological disorders and evolved into pioneering research in brain-machine interfaces.</p>
+                            <p>With over a century of experience, we continue to push the boundaries of regenerative medicine and cognitive technology, always committed to improving human quality of life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover mc-card-fixed">
+                        <img src="imagens/laboratorio.jpg" alt="Murkoff Laboratory" class="mc-lab-img">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mission, Vision and Values Cards -->
+            <div class="w3-row-padding w3-margin-top mc-equal-height-row">
+                <div class="w3-third">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover mc-card-fixed">
+                        <div class="mc-card-content mc-card-center">
+                            <i class="fa fa-bullseye mc-card-icon mc-text"></i>
+                            <h4 class="mc-text">Mission</h4>
+                            <p>To develop advanced neurotechnological solutions that transform the treatment of neurological conditions and enhance human capabilities through safe and effective brain-machine interfaces.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover mc-card-fixed">
+                        <div class="mc-card-content mc-card-center">
+                            <i class="fa fa-eye mc-card-icon mc-text"></i>
+                            <h4 class="mc-text">Vision</h4>
+                            <p>To be the world leader in neurotechnology, recognized for our groundbreaking innovations that redefine the limits of medicine and human potential.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover mc-card-fixed">
+                        <div class="mc-card-content mc-card-center">
+                            <i class="fa fa-diamond mc-card-icon mc-text"></i>
+                            <h4 class="mc-text">Values</h4>
+                            <p>Innovation, Scientific Excellence, Ethical Integrity, Commitment to Patient Safety, and Interdisciplinary Collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section id="technologies" class="mc-section mc-light-gray">
+        <div class="w3-container w3-padding-64">
+            <h2 class="w3-center mc-text"><b>INNOVATIVE TECHNOLOGIES</b></h2>
+            <div class="w3-row-padding w3-margin-top mc-tech-row">
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover mc-tech-card">
+                        <div class="mc-tech-content">
+                            <h3 class="mc-text">Morphogenic Engine System</h3>
+                            <p>Our proprietary technology enables accelerated tissue regeneration and controlled cellular modification. Using advanced bioengineering algorithms, the Morphogenic Engine represents a milestone in regenerative medicine.</p>
+                            <ul class="w3-ul">
+                                <li><i class="fa fa-check mc-text"></i> Accelerated tissue regeneration</li>
+                                <li><i class="fa fa-check mc-text"></i> Controlled cellular modification</li>
+                                <li><i class="fa fa-check mc-text"></i> Applications in neurology and orthopedics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover mc-tech-card">
+                        <div class="mc-tech-content">
+                            <h3 class="mc-text">Walrider Project</h3>
+                            <p>Advanced brain-machine interface system that facilitates direct communication between biological and digital systems. This revolutionary technology allows new forms of interaction between humans and machines.</p>
+                            <ul class="w3-ul">
+                                <li><i class="fa fa-check mc-text"></i> Bidirectional brain-machine communication</li>
+                                <li><i class="fa fa-check mc-text"></i> Applications in neurological rehabilitation</li>
+                                <li><i class="fa fa-check mc-text"></i> Potential for cognitive enhancement</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w3-row-padding w3-margin-top mc-equal-height-row">
+                <div class="w3-third">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover mc-card-fixed">
+                        <div class="mc-card-content mc-card-center">
+                            <i class="fa fa-cogs mc-card-icon mc-text"></i>
+                            <h4 class="mc-text">Neuro-Monitoring</h4>
+                            <p>Advanced real-time neurological monitoring systems for accurate diagnosis and therapeutic interventions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover mc-card-fixed">
+                        <div class="mc-card-content mc-card-center">
+                            <i class="fa fa-microchip mc-card-icon mc-text"></i>
+                            <h4 class="mc-text">Bio-Implants</h4>
+                            <p>Biocompatible neural implants that restore lost functions and enhance cognitive capabilities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-third">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover mc-card-fixed">
+                        <div class="mc-card-content mc-card-center">
+                            <i class="fa fa-line-chart mc-card-icon mc-text"></i>
+                            <h4 class="mc-text">Predictive Analysis</h4>
+                            <p>AI algorithms to predict neurological disease progression and personalize treatments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section id="partners" class="mc-section">
+        <div class="w3-container w3-padding-64">
+            <h2 class="w3-center mc-text"><b>STRATEGIC PARTNERS</b></h2>
+            <h4 class="w3-center w3-wide">Collaborations That Drive Innovation</h4>
+            
+            <div class="w3-container w3-center w3-padding-32">
+                <p class="w3-large">Murkoff Corporation maintains strategic partnerships with research institutions, universities, and innovative companies to accelerate the development of transformative technologies.</p>
+                
+                <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-quarter w3-center">
+                        <div class="mc-partner-card">
+                            <img src="imagens/parceiro1.png" alt="Mount Massive Research Institute" class="mc-partner-logo">
+                            <h4>Mount Massive Research Institute</h4>
+                            <p>Partnership in advanced neurological research</p>
+                        </div>
+                    </div>
+                    <div class="w3-quarter w3-center">
+                        <div class="mc-partner-card">
+                            <img src="imagens/parceiro2.png" alt="Umbrella Pharmaceuticals" class="mc-partner-logo">
+                            <h4>Umbrella Pharmaceuticals</h4>
+                            <p>Joint development of pharmacological therapies</p>
+                        </div>
+                    </div>
+                    <div class="w3-quarter w3-center">
+                        <div class="mc-partner-card">
+                            <img src="imagens/parceiro3.png" alt="Vault Tec" class="mc-partner-logo">
+                            <h4>Vault Tec</h4>
+                            <p>Clinical testing and implementation of new technologies</p>
+                        </div>
+                    </div>
+                    <div class="w3-quarter w3-center">
+                        <div class="mc-partner-card">
+                            <img src="imagens/parceiro4.png" alt="Murkywater" class="mc-partner-logo">
+                            <h4>Murkywater</h4>
+                            <p>Supply of nanotechnological components</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w3-row-padding w3-margin-top">
+                    <div class="w3-quarter w3-center">
+                        <div class="mc-partner-card">
+                            <img src="imagens/parceiro5.png" alt="INGSOC" class="mc-partner-logo">
+                            <h4>INGSOC</h4>
+                            <p>Private security programs</p>
+                        </div>
+                    </div>
+                    <div class="w3-quarter w3-center">
+                        <div class="mc-partner-card">
+                            <img src="imagens/parceiro6.png" alt="Hyperion" class="mc-partner-logo">
+                            <h4>Hyperion</h4>
+                            <p>Supply of raw materials and safety devices</p>
+                        </div>
+                    </div>
+                    <div class="w3-quarter w3-center">
+                        <div class="mc-partner-card">
+                            <img src="imagens/parceiro7.png" alt="NERV" class="mc-partner-logo">
+                            <h4>NERV</h4>
+                            <p>Development of medical devices</p>
+                        </div>
+                    </div>
+                    <div class="w3-quarter w3-center">
+                        <div class="mc-partner-card">
+                            <img src="imagens/parceiro8.png" alt="Aperture Laboratories" class="mc-partner-logo">
+                            <h4>Aperture Laboratories</h4>
+                            <p>Development of neurocognitive therapies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="mc-section mc-light-gray">
+        <div class="w3-container w3-padding-64">
+            <h2 class="w3-center mc-text"><b>FREQUENTLY ASKED QUESTIONS</b></h2>
+            <h4 class="w3-center w3-wide">Find Answers to Your Questions</h4>
+            
+            <div class="w3-container w3-padding-32">
+                <div class="w3-card-4 mc-faq-container">
+                    <div class="mc-faq-question" onclick="toggleFAQ(1)">
+                        <h4>What are the main areas of activity at Murkoff Corporation?</h4>
+                        <i class="fa fa-chevron-down mc-faq-icon"></i>
+                    </div>
+                    <div id="faq1" class="mc-faq-answer">
+                        <p>Murkoff Corporation focuses primarily on the development of neuroscientific technologies, including brain-machine interfaces, regenerative therapies, neuroplasticity research, and advanced neurological monitoring systems. Our research covers both immediate clinical applications and cutting-edge technologies that redefine the possibilities of medicine.</p>
+                    </div>
+                    
+                    <div class="mc-faq-question" onclick="toggleFAQ(2)">
+                        <h4>How can I participate in Murkoff's research programs?</h4>
+                        <i class="fa fa-chevron-down mc-faq-icon"></i>
+                    </div>
+                    <div id="faq2" class="mc-faq-answer">
+                        <p>Murkoff's research programs are carried out in partnership with certified medical institutions. Interested individuals can visit our recruitment page or contact our clinical partners to check eligibility. All participants undergo a rigorous screening process to ensure safety and adherence to research protocols.</p>
+                    </div>
+                    
+                    <div class="mc-faq-question" onclick="toggleFAQ(3)">
+                        <h4>Are Murkoff's technologies commercially available?</h4>
+                        <i class="fa fa-chevron-down mc-faq-icon"></i>
+                    </div>
+                    <div id="faq3" class="mc-faq-answer">
+                        <p>Some of our technologies have already received regulatory approval and are available through our medical partners. Others are in advanced clinical trials. Please contact our team for specific availability details. We remain committed to transparency about the development status of each technology.</p>
+                    </div>
+                    
+                    <div class="mc-faq-question" onclick="toggleFAQ(4)">
+                        <h4>What are the safety requirements for Murkoff technologies?</h4>
+                        <i class="fa fa-chevron-down mc-faq-icon"></i>
+                    </div>
+                    <div id="faq4" class="mc-faq-answer">
+                        <p>All our technologies undergo rigorous safety protocols and extensive testing before any clinical application. We maintain the highest ethical and safety standards in compliance with international regulations. Our ethics and safety committees oversee all aspects of technology development and application.</p>
+                    </div>
+                    
+                    <div class="mc-faq-question" onclick="toggleFAQ(5)">
+                        <h4>Does Murkoff offer internship or employment opportunities?</h4>
+                        <i class="fa fa-chevron-down mc-faq-icon"></i>
+                    </div>
+                    <div id="faq5" class="mc-faq-answer">
+                        <p>Yes, we are always seeking exceptional talent in the fields of neuroscience, biomedical engineering, computer science, and clinical research. Visit our careers page for current opportunities. We offer internships, research positions, and roles across various areas of expertise.</p>
+                    </div>
+                    
+                    <div class="mc-faq-question" onclick="toggleFAQ(6)">
+                        <h4>How does Murkoff protect neurological data privacy?</h4>
+                        <i class="fa fa-chevron-down mc-faq-icon"></i>
+                    </div>
+                    <div id="faq6" class="mc-faq-answer">
+                        <p>Data protection is an absolute priority at Murkoff. We implement advanced encryption protocols, data anonymization, and strictly comply with personal data protection regulations across all our operations. Our data security systems are regularly audited by independent experts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mc-section">
+        <div class="w3-container w3-padding-64">
+            <h2 class="w3-center mc-text"><b>CONTACT US</b></h2>
+            <h4 class="w3-center w3-wide">We're Here to Answer Your Questions</h4>
+            
+            <div class="w3-row-padding w3-margin-top">
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover">
+                        <h3 class="mc-text">Contact Information</h3>
+                        <p><i class="fa fa-map-marker mc-text"></i> <strong>Address:</strong> Murkoff Corporation Headquarters, 123 Neurotech Avenue, Lake County, Colorado 80401</p>
+                        <p><i class="fa fa-phone mc-text"></i> <strong>Phone:</strong> +1 (555) 237-8910</p>
+                        <p><i class="fa fa-envelope mc-text"></i> <strong>Email:</strong> contact@murkoffcorp.com</p>
+                        <p><i class="fa fa-clock-o mc-text"></i> <strong>Business Hours:</strong> Monday to Friday, 9:00 AM - 6:00 PM</p>
+                        
+                        <h4 class="mc-text w3-margin-top">Follow Us on Social Media</h4>
+                        <div class="w3-xlarge">
+                            <a href="#" class="w3-button"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="w3-button"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="w3-button"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" class="w3-button"><i class="fa fa-youtube"></i></a>
+                            <a href="#" class="w3-button"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-card-4 w3-padding-large mc-card-hover">
+                        <h3 class="mc-text">Send a Message</h3>
+                        <form id="contactForm">
+                            <div class="w3-section">
+                                <label for="name">Name</label>
+                                <input class="w3-input w3-border" type="text" id="name" required>
+                            </div>
+                            <div class="w3-section">
+                                <label for="email">Email</label>
+                                <input class="w3-input w3-border" type="email" id="email" required>
+                            </div>
+                            <div class="w3-section">
+                                <label for="subject">Subject</label>
+                                <input class="w3-input w3-border" type="text" id="subject" required>
+                            </div>
+                            <div class="w3-section">
+                                <label for="message">Message</label>
+                                <textarea class="w3-input w3-border" id="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="w3-button w3-block mc-red w3-round-large">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="w3-container mc-dark w3-padding-32 w3-center">
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <h4>Murkoff Corporation</h4>
+            <p>Leader in neurotechnology research and development of innovative biomedical solutions.</p>
+        </div>
+        <div class="w3-third">
+            <h4>Quick Links</h4>
+            <p><a href="#home">Home</a></p>
+            <p><a href="#about">About</a></p>
+            <p><a href="#technologies">Technologies</a></p>
+            <p><a href="#faq">FAQ</a></p>
+        </div>
+        <div class="w3-third">
+            <h4>Subscribe to Our Newsletter</h4>
+            <p>Get the latest updates on our research and innovations.</p>
+            <div class="w3-row">
+                <input class="w3-input w3-border w3-threequarter" type="email" placeholder="Your email">
+                <button class="w3-button mc-red w3-quarter">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <div class="w3-row-padding w3-margin-top">
+        <div class="w3-full">
+            <hr>
+            <p>&copy; 2025 Murkoff Corporation. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

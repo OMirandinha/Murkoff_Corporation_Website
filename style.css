@@ -1,0 +1,338 @@
+/* ===== CUSTOM STYLES FOR MURKOFF CORPORATION ===== */
+
+/* Color variables */
+:root {
+    --mc-red: #8B0000;
+    --mc-dark: #1a1a1a;
+    --mc-dark-gray: #2a2a2a;
+    --mc-light-gray: #f5f5f5;
+    --mc-gold: #D4AF37;
+}
+
+/* Reset and general settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+/* Brand colors */
+.mc-red {
+    background-color: var(--mc-red) !important;
+    color: white !important;
+}
+
+.mc-dark {
+    background-color: var(--mc-dark) !important;
+    color: white !important;
+}
+
+.mc-light-gray {
+    background-color: var(--mc-light-gray) !important;
+}
+
+.mc-text {
+    color: var(--mc-red) !important;
+}
+
+.mc-text-gold {
+    color: var(--mc-gold) !important;
+}
+
+/* Custom sidebar */
+.mc-sidebar {
+    z-index: 3;
+    width: 250px;
+    background-color: var(--mc-dark) !important;
+    color: white !important;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+    height: 100%;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.mc-logo-container {
+    border-bottom: 1px solid #444;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    background: transparent;
+}
+
+.mc-main-content {
+    margin-left: 250px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .mc-main-content {
+        margin-left: 0;
+        padding-top: 60px;
+    }
+    
+    .mc-sidebar {
+        display: none;
+    }
+}
+
+/* Logo with transparent background */
+.mc-logo {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+}
+
+.mc-logo:hover {
+    filter: brightness(0) invert(0.8);
+}
+
+/* Menu button for mobile */
+.mc-menu-btn {
+    position: fixed !important;
+    top: 10px;
+    left: 10px;
+    z-index: 4;
+    border-radius: 4px;
+}
+
+/* Sections padded to compensate for sidebar */
+.mc-section {
+    padding-top: 40px;
+    margin-top: -40px;
+}
+
+/* Hero Section */
+.mc-hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('imagens/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+}
+
+/* Container for equal height cards */
+.mc-equal-height, .mc-equal-height-row, .mc-tech-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mc-equal-height .w3-half,
+.mc-equal-height-row .w3-third,
+.mc-tech-row .w3-half {
+    display: flex;
+}
+
+/* Cards with fixed and equal height */
+.mc-card-fixed, .mc-tech-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.mc-card-content, .mc-tech-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Centered content within cards */
+.mc-card-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+}
+
+/* Ensure icons have consistent size */
+.mc-card-icon {
+    font-size: 48px !important;
+    margin-bottom: 15px;
+}
+
+/* Make sure the image occupies all available height */
+.mc-lab-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Specific adjustments for technology cards */
+.mc-tech-content h3 {
+    margin-bottom: 15px;
+}
+
+.mc-tech-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.mc-tech-content ul {
+    flex-grow: 1;
+    margin-top: 15px;
+}
+
+.mc-tech-content li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.mc-tech-content li i {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+/* Partner logos */
+.mc-partner-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.mc-partner-logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.mc-partner-card {
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.mc-partner-card:hover {
+    transform: translateY(-5px);
+}
+
+/* FAQ */
+.mc-faq-container {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mc-faq-question {
+    cursor: pointer;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.mc-faq-question:hover {
+    background-color: #f9f9f9;
+}
+
+.mc-faq-icon {
+    transition: transform 0.3s;
+}
+
+.mc-faq-answer {
+    display: none;
+    padding: 20px 30px;
+    background-color: #f9f9f9;
+    border-left: 3px solid var(--mc-red);
+    animation: fadeIn 0.5s;
+}
+
+/* Hover effects for cards */
+.mc-card-hover {
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mc-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* List styling */
+.w3-ul {
+    border: none !important;
+    margin: 0 !important;
+}
+
+.w3-ul li {
+    padding: 8px 0 !important;
+    border-bottom: 1px solid #f1f1f1 !important;
+}
+
+.w3-ul li:last-child {
+    border-bottom: none !important;
+}
+
+/* Social buttons */
+.w3-button:hover {
+    opacity: 0.8;
+}
+
+/* Additional responsiveness */
+@media screen and (max-width: 992px) {
+    .mc-equal-height .w3-half,
+    .mc-equal-height-row .w3-third,
+    .mc-tech-row .w3-half {
+        margin-bottom: 16px;
+    }
+    
+    .mc-partner-logo {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .mc-faq-question h4 {
+        font-size: 16px;
+    }
+    
+    .mc-hero h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .mc-hero h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* Footer */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
